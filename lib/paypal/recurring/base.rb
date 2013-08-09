@@ -31,6 +31,7 @@ module PayPal
       attr_accessor :trial_length
       attr_accessor :trial_period
       attr_accessor :trial_amount
+      attr_accessor :tax_amt
 
       def initialize(options = {})
         options.each {|name, value| send("#{name}=", value)}
@@ -60,6 +61,7 @@ module PayPal
         params = collect(
           :locale,
           :amount,
+          :tax_amt,
           :return_url,
           :cancel_url,
           :currency,
@@ -130,6 +132,7 @@ module PayPal
       def request_payment
         params = collect(
           :amount,
+          :tax_amt,
           :return_url,
           :cancel_url,
           :ipn_url,
@@ -175,6 +178,7 @@ module PayPal
       def create_recurring_profile
         params = collect(
           :amount,
+          :tax_amt,
           :initial_amount,
           :initial_amount_action,
           :currency,
@@ -220,6 +224,7 @@ module PayPal
       def update_recurring_profile
         params = collect(
           :amount,
+          :tax_amt,
           :currency,
           :description,
           :note,
@@ -260,6 +265,7 @@ module PayPal
           :reference,
           :refund_type,
           :amount,
+          :tax_amt,
           :currency,
           :note
         )

@@ -21,6 +21,7 @@ module PayPal
           :frequency           => :BILLINGFREQUENCY,
           :currency            => :CURRENCYCODE,
           :amount              => :AMT,
+          :tax_amt              => :TAXAMT,
           :initial_amount      => :AGGREGATEOPTIONALAMT
         )
 

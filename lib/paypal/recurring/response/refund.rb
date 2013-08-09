@@ -8,6 +8,7 @@ module PayPal
           :gross_amount   => :GROSSREFUNDAMT,
           :net_amount     => :NETREFUNDAMT,
           :amount         => :TOTALREFUNDEDAMOUNT,
+          :tax_amt        => :TAXAMT,
           :currency       => :CURRENCYCODE,
           :info           => :REFUNDINFO,
           :status         => :REFUNDSTATUS,

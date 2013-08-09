@@ -5,6 +5,7 @@ module PayPal
         mapping(
           :status         => :PAYMENTINFO_0_PAYMENTSTATUS,
           :amount         => :PAYMENTINFO_0_AMT,
+          :tax_amt        => :TAXAMT,
           :fees           => :PAYMENTINFO_0_FEEAMT,
           :transaction_id => :PAYMENTINFO_0_TRANSACTIONID,
           :seller_id      => :PAYMENTINFO_0_SECUREMERCHANTACCOUNTID,

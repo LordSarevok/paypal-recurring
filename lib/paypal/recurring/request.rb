@@ -52,6 +52,7 @@ module PayPal
       ATTRIBUTES = {
         :action                => "ACTION",
         :amount                => ["PAYMENTREQUEST_0_AMT", "AMT"],
+        :tax_amt                => "TAXAMT",
         :billing_type          => "L_BILLINGTYPE0",
         :cancel_url            => "CANCELURL",
         :currency              => ["PAYMENTREQUEST_0_CURRENCYCODE", "CURRENCYCODE"],

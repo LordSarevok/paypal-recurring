@@ -12,6 +12,7 @@ module PayPal
         :reference        => [:rp_invoice_id, :custom, :invoice],
         :payment_id       => :recurring_payment_id,
         :amount           => [:amount, :mc_gross, :payment_gross],
+        :tax_amt           => :tax_amt,
         :currency         => :mc_currency,
         :status           => :payment_status,
         :pending_reason   => :pending_reason,

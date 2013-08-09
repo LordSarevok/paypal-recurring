@@ -13,6 +13,7 @@ module PayPal
           :country      => :COUNTRYCODE,
           :currency     => :CURRENCYCODE,
           :amount       => :AMT,
+          :tax_amt       => :TAXAMT,
           :description  => :DESC,
           :ipn_url      => :NOTIFYURL
         )
